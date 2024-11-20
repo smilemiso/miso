@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "assets/images/new_Bg.jpg";
 
 function Presentation() {
   return (
@@ -60,41 +60,26 @@ function Presentation() {
         sticky
       />
       <MKBox
-        minHeight="75vh"
-        width="100%"
+        minHeight={{ xs: "50vh", md: "100vh" }}
+        width="100vw"
         sx={{
           backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundSize: { xs: "contain", md: "cover" },
+          backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              Material Kit 2 React{" "}
-            </MKTypography>
             <MKTypography
               variant="body1"
               color="white"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
-            >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
+            ></MKTypography>
           </Grid>
         </Container>
       </MKBox>
