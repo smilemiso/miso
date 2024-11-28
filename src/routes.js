@@ -70,26 +70,26 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "Admin",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "Information pages",
         collapse: [
           {
-            name: "about us",
+            name: "Info",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
           },
           {
-            name: "contact us",
+            name: "Development Activities",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
           },
           {
-            name: "author",
+            name: "Social",
             route: "/pages/landing-pages/author",
             component: <Author />,
           },

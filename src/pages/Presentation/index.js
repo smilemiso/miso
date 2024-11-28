@@ -29,7 +29,6 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
@@ -60,7 +59,7 @@ function Presentation() {
         sticky
       />
       <MKBox
-        minHeight={{ xs: "50vh", md: "100vh" }}
+        minHeight={{ xs: "40vh", md: "100vh" }}
         width="100vw"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -77,9 +76,12 @@ function Presentation() {
               variant="body1"
               color="white"
               textAlign="center"
+              marginLeft="-50px"
               px={{ xs: 6, lg: 12 }}
               mt={1}
-            ></MKTypography>
+            >
+              Developer <br /> A Personal Site
+            </MKTypography>
           </Grid>
         </Container>
       </MKBox>
@@ -94,7 +96,6 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
         <Information />
         <DesignBlocks />
         <Pages />
